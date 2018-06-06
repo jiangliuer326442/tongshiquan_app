@@ -1,0 +1,79 @@
+@import "../../css/common";
+
+.club{
+    #refreshContainer{
+        padding-top: 0px;
+    }
+    .twt_list{
+        display: flex;-webkit-margin-before: 0em; -webkit-margin-after: 0em; -webkit-padding-start: 0; background-color: #fff; flex-direction: column; margin-top: 40px;
+        .twt_item{
+            display: flex; padding-top: .5em; padding-bottom: .5em; border-top: 1px dashed #ddd;
+            .avatar{
+                width: 2.5em; margin-right: .5em; margin-left: .5em;
+                img{
+                    width: 100%; height: 2.5em; border-radius: .3em;
+                }
+            }
+            .body{
+                flex: 1; padding-right: .4em;
+                h3{
+                    padding-top: 0em; line-height: 1.5em; font-weight: normal; color: @active; font-size: .9em; margin-top: 0px; margin-bottom: 0px;
+                    .visibility{
+                        color: #666; font-weight: bold; margin-left: .3em;
+                    }
+                }
+                p{
+                    color: @black; word-break: break-all; flex-wrap: wrap; font-size: 1em; line-height: 1.3em; letter-spacing: .1em; margin-bottom: 0px; display: flex; align-items: center;
+                    img{
+                        display: inline;
+                    }
+                }
+                .img_box{
+                    display: flex; flex-wrap: wrap; margin-right: 1em; margin-top: .3em;
+                    .img{
+                        margin-right: 1.5%; align-items: flex-start;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .link_box{
+                    background-color: #efefef; padding: 2px .8em; margin-top: .5em; margin-bottom: .5em;
+                    h4{
+                        font-weight: normal; font-size: .9em;
+                    }
+                }
+                .oprate_box{
+                    display: flex;
+                    .create_ts{
+                        color: #999; font-size: .8em;
+                    }
+                    .reply{
+                        margin-left: .5em; color: #000; font-size: .8em;
+                    }
+                    .delete{
+                        color: #999; margin-left: .5em; font-size: .8em;
+                    }
+                }
+                .comment_box{
+                    background-color: #efefef; padding-left: .5em; padding: .4em; margin-top: .3em;
+                    .comment{
+                        font-size: .9em; line-height: 1.3em; margin-bottom: .4em;
+                        .nick{
+                            color: @active; margin-right: .3em; display: inline;
+                            &::after{
+                                content: ":";
+                            }
+                        }
+                        .content{
+                             display: inline; color: @black; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #createPopover{
+        width: 8em !important;
+    }
+}

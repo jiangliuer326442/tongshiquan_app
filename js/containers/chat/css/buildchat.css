@@ -1,0 +1,12 @@
+.build-chat .mui-scroll {
+  display: flex;
+  width: 100% !important;
+}
+.build-chat .mui-scroll a {
+  flex: 1;
+  border-bottom: 3px solid #C8C8C8 !important;
+}
+.build-chat .mui-scroll a.mui-active {
+  color: #FFAC38 !important;
+  border-bottom: 3px solid #FFAC38 !important;
+}

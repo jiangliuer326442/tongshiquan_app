@@ -1,0 +1,72 @@
+@import "../../../containers/css/common";
+header{
+    &.mui-bar{
+        background-color: #3C394B !important;
+        .mui-title{
+            color: #F8F8F9;
+            letter-spacing: 1px;
+        }
+        a{
+            color: #F8F8F9;
+        }
+    }
+    #topPopover {
+        position: fixed; background: #3C394B; width: 8em;
+        top: 16px;
+        right: 6px;
+        .mui-popover-arrow {
+            left: auto;
+            right: 6px;
+            &::after{
+                background: #3C394B;
+            }
+        }
+        .mui-scroll{
+            .mui-table-view{
+                background: #3C394B;
+                &::before{
+                    background-color: #3C394B !important;
+                }
+                &::after{
+                    background-color: #3C394B !important;
+                }
+                .mui-table-view-cell{
+                    text-align: center; padding: 9px 10px; -webkit-tap-highlight-color: #3C394B;
+                    &::after{
+                        background-color: #3C394B !important;
+                    }
+                    a{
+                        color: #F8F8F9; background-color: #3C394B; text-align: center; font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+    .right-box{
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        right: .5em;
+        top: 58px;
+        height: 0px;
+        overflow: hidden;
+        &.show{
+            border: 1px solid @gray;
+            animation:asidetobig .5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes asidetobig{
+            from {height: 0px; opacity: 0;}
+            to {height: 150px; opacity: 1;}
+        }
+        &.hide{
+            border: 1px solid @gray;
+            animation:asidetosmall .5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes asidetosmall{
+            from {height: 150px; opacity: 1;}
+            to {height: 0px; opacity: 0;}
+        }
+    }
+}

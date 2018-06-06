@@ -1,0 +1,32 @@
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell {
+  position: relative;
+  overflow: hidden;
+  padding: 11px 15px;
+}
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell a:not(.mui-btn) {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: -11px -15px;
+  padding: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
+}
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell span.mui-pull-right {
+  color: #999;
+  font-size: .9em;
+}
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell span.mui-pull-right.unbind {
+  color: #FFAC38;
+}
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell .mui-icon {
+  font-size: 1.4em;
+  margin-right: .3em;
+}
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell .mui-icon.mui-icon-weixin {
+  color: #00C833;
+}
+.account .mui-scroll-wrapper .mui-table-view .mui-table-view-cell .mui-icon.mui-icon-qq {
+  color: #47B0FC;
+}

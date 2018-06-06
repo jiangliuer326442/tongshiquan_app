@@ -1,0 +1,489 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone"
+	],
+	"id": "H5B607961",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "卡拉布",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "18.03.06",/*应用版本名称*/
+		"code": "180306"
+	},
+	"description": "卡拉布同事圈--企业员工信息共享平台",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "方海亮",/*开发者名称*/
+		"email": "fanghailiang@companyclub.cn",/*开发者邮箱地址*/
+		"url": "https://github.com/jiangliuer326442"
+	},
+	"permissions": {
+
+
+
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+
+
+
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"Webview": {},
+		"Storage": {},
+		"NativeObj": {},
+		"NativeUI": {},
+		"Device": {},
+		"Invocation": {},
+		"OAuth": {},
+		"Runtime": {},
+		"Navigator": {},
+		"Uploader": {},
+		"Zip": {},
+		"Share": {},
+		"Downloader": {},
+		"Camera": {},
+		"Gallery": {},
+		"Audio": {},
+		"File": {},
+		"Messaging": {},
+		"Contacts": {},"Push":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": false,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": false,
+			"delay": "0"
+		},
+		"popGesture": "none",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"plugins": {
+				"push":{
+					"igexin":{
+						"appid":"3wawn3MMB29jzrju7rnLw3",
+						"appkey":"8ofNYLSi3x7DgJo1sjz2E5",
+						"appsecret":"n4EgZNiNd9AHg6iw6HDEy8"
+					}
+				},
+				"share": {
+					"qq": {
+						"appid": "101188797",
+						"description": "QQ分享"
+					},
+					"weixin": {
+						"appid": "wx07bd718ecc7930f7",
+						"appsecret": "549d1e9dee4714545ae22158bd805740",
+						"description": "可选，微信分享"
+					},
+					"sina": {
+						"appkey": "1035696785",
+						"appsecret": "8dad63cd4d4a282ac6ec95edd0f4e541",
+						"redirect_uri": "http://www.companyclub.cn/sina_auth.jsp",
+						"description": "可选，新浪微博分享"
+					}
+				},
+				"oauth": {
+					"qq": {
+						"appid": "101188797"
+					},
+					"weixin": {
+						"appid": "wx07bd718ecc7930f7",
+						"appsecret": "549d1e9dee4714545ae22158bd805740"
+					}
+				}
+			},
+			"apple": {
+				"appid": "com.yelun.companyclub",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "iphone",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"urltypes": [
+					{
+						"urlidentifier": "com.yelun.companyclub",
+						"urlschemes": [
+							"club"
+						]
+					}
+				],
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "com.yelun.companyclub",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "unpackage/keystore/companyclub.keystore",/*Android应用打包使用的密钥库文件*/
+				"password": "oBHwE63hzctrMm9E",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "companyclub",/*Android应用打包使用密钥库中证书的别名*/
+				"schemes": [
+					"club"
+				],
+				"permissions": ["<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+						/*iPhone4S/5/6程序图标，分辨率：120x120*/
+						/*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						/*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"app@3x": "unpackage/res/icons/180x180.png",
+						"app@2x": "unpackage/res/icons/120x120.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"settings@3x": "unpackage/res/icons/87x87.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"spotlight@3x": "unpackage/res/icons/120x120.png",
+						"notification@2x": "unpackage/res/icons/40x40.png",
+						"notification@3x": "unpackage/res/icons/60x60.png"
+					},
+					"appstore": "unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "unpackage/keystore/timg.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "",
+					"hdpi": "unpackage/keystore/timg.png",
+					"xhdpi": "unpackage/keystore/timg.png",
+					"xxhdpi": "unpackage/keystore/timg.png"
+				}
+			}
+		},
+		"ads":{
+			"rp":true,
+			"splash":true,
+			"push":true,
+			"spot":true
+		},
+		"adid":"12230090102"
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/lib/babel.min.js",
+					"js/lib/react-dom.min.js",
+					"js/lib/react.min.js",
+					"js/lib/ReactRouter.min.js",
+					"js/lib/redux.min.js",
+					"js/lib/react-redux.min.js",
+					"js/lib/react.js",
+					"js/lib/react-dom.js",
+					"js/lib/ReactRouter.js",
+					"js/lib/redux.js",
+					"js/lib/react-redux.js",
+					"js/main.js",
+					"js/lib/require.js",
+					"js/reducers/index.js",
+					"js/stores/configureStore.js",
+					"js/containers/main.js",
+					"js/lib/animate.min.css",
+					"js/lib/bootstrap.min.css",
+					"js/lib/jquery-2.0.0.min.js",
+					"js/lib/bootstrap.min.js",
+					"js/lib/css.js",
+					"js/containers/css/main.css",
+					"js/lib/css.min.js",
+					"js/containers/register/putcompany.js",
+					"js/containers/register/css/register.css",
+					"js/actions/common.js",
+					"js/lib/crypto-js/mode-ecb.js",
+					"js/lib/crypto-js/sha3.js",
+					"js/lib/crypto-js/mode-ctr-gladman.js",
+					"js/lib/crypto-js/core.js",
+					"js/lib/crypto-js/sha224.js",
+					"js/lib/crypto-js/pad-iso97971.js",
+					"js/lib/crypto-js/mode-ofb.js",
+					"js/lib/crypto-js/rabbit.js",
+					"js/lib/crypto-js/enc-base64.js",
+					"js/lib/crypto-js/x64-core.js",
+					"js/lib/crypto-js/cipher-core.js",
+					"js/lib/crypto-js/pbkdf2.js",
+					"js/lib/crypto-js/lib-typedarrays.js",
+					"js/lib/crypto-js/ripemd160.js",
+					"js/lib/crypto-js/pad-iso10126.js",
+					"js/lib/crypto-js/index.js",
+					"js/lib/crypto-js/sha384.js",
+					"js/lib/crypto-js/hmac.js",
+					"js/lib/crypto-js/pad-zeropadding.js",
+					"js/actions/ajax.js",
+					"js/lib/crypto-js/sha1.js",
+					"js/lib/crypto-js/sha256.js",
+					"js/lib/crypto-js/tripledes.js",
+					"js/lib/crypto-js/mode-cfb.js",
+					"js/lib/crypto-js/pad-ansix923.js",
+					"js/lib/crypto-js/aes.js",
+					"js/lib/crypto-js/rc4.js",
+					"js/lib/crypto-js/md5.js",
+					"js/lib/crypto-js/format-hex.js",
+					"js/lib/crypto-js/enc-utf16.js",
+					"js/lib/crypto-js/pad-nopadding.js",
+					"js/lib/crypto-js/rabbit-legacy.js",
+					"js/lib/crypto-js/evpkdf.js",
+					"js/lib/crypto-js/mode-ctr.js",
+					"js/lib/crypto-js/sha512.js",
+					"js/config/index.js",
+					"js/actions/reglog.js",
+					"js/reducers/reglog.js",
+					"js/containers/register/putphone.js",
+					"js/containers/register/putcode.js",
+					"js/containers/company/index.js",
+					"js/reducers/myuser.js",
+					"js/actions/myuser.js",
+					"js/containers/register/login.js",
+					"js/components/reglog/thirdlogin.js",
+					"js/actions/company.js",
+					"js/components/reglog/css/thirdlogin.css",
+					"js/reducers/mycompany.js",
+					"js/components/company/cmpfooter.js",
+					"js/reducers/cmpnotice.js",
+					"js/components/company/css/cmpfooter.css",
+					"js/containers/company/css/company.css",
+					"js/components/company/cmpheader.js",
+					"js/actions/cmpnotice.js",
+					"js/components/company/leftbar.js",
+					"js/components/company/css/cmpheader.css",
+					"js/reducers/nav.js",
+					"js/actions/nav.js",
+					"js/containers/discuz/index.js",
+					"js/components/header.js",
+					"js/components/discuz/disheader.js",
+					"js/actions/cmpdiscuz.js",
+					"js/reducers/cmpdiscuz.js",
+					"js/containers/discuz/css/discuz.css",
+					"js/components/discuz/leftbar.js",
+					"js/components/discuz/css/postbars.css",
+					"js/components/discuz/postbars.js",
+					"js/containers/discuz/addpost.js",
+					"js/containers/discuz/css/addpost.css",
+					"js/lib/wangeditor/wangEditor.min.js",
+					"js/actions/article.js",
+					"js/lib/mui/icons-extra.css",
+					"js/lib/fonts/club_iconfont.css",
+					"js/lib/mui/mui.min.js",
+					"js/lib/mui/mui.min.css",
+					"js/containers/article/css/post.css",
+					"js/reducers/article.js",
+					"js/containers/article/post.js",
+					"js/lib/mui/mui.js",
+					"js/lib/mui/mui.extend.js",
+					"js/lib/mui/mui.pullToRefresh.js",
+					"js/lib/mui/mui.pullToRefresh.material.js",
+					"js/lib/mui/mui.picker.all.js",
+					"js/lib/fonts/mui.ttf",
+					"js/lib/fonts/mui-icons-extra.ttf",
+					"js/lib/mui/mui.picker.all.css"
+				],
+				"refer": [
+					"platform.html"
+				],
+				"priority": 0
+			},
+			"platform.html": {
+				"resources": [
+					"html/tab-webview-subpage-chat.html"
+				],
+				"refer": [
+					"html/tab-webview-subpage-contact.html",
+					"html/new-webview.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/lib/jquery-qqface/arclist/62.gif",
+				"js/containers/register/img/putcode.png",
+				"js/lib/mui/mui.picker.css",
+				"js/lib/jquery-qqface/arclist/72.gif",
+				"js/components/company/header.js",
+				"js/components/article/css/commentbox.css",
+				"js/lib/jquery-qqface/arclist/64.gif",
+				"js/lib/mui/mui.previewimage.js",
+				"js/lib/jquery-qqface/arclist/45.gif",
+				"js/containers/company/img/company.png",
+				"js/lib/jquery-qqface/arclist/75.gif",
+				"js/lib/crypto-js/hmac-sha3.js",
+				"js/lib/jquery-qqface/arclist/7.gif",
+				"build.bat",
+				"js/lib/wangeditor/fonts/w-e-icon.woff",
+				"js/lib/wangeditor/wangEditor.min.js.map",
+				"js/lib/jquery-qqface/arclist/50.gif",
+				"js/reducers/chat.js",
+				"js/lib/crypto-js/enc-utf8.js",
+				"js/lib/crypto-js/hmac-ripemd160.js",
+				"js/containers/css/common.less",
+				"js/lib/jquery-qqface/arclist/67.gif",
+				"js/lib/jquery-qqface/arclist/51.gif",
+				"js/lib/jquery-qqface/arclist/66.gif",
+				"js/containers/article/css/article.less",
+				"js/lib/jquery-qqface/arclist/24.gif",
+				"js/lib/jquery-qqface/arclist/1.gif",
+				"js/containers/discuz/css/addpost.less",
+				"js/lib/jquery-qqface/arclist/68.gif",
+				"js/lib/mui/mui.imageviewer.css",
+				"js/lib/jquery-qqface/arclist/46.gif",
+				"js/containers/chat/recent.js",
+				"js/lib/jquery-qqface/arclist/8.gif",
+				"js/lib/jquery-qqface/arclist/34.gif",
+				"js/lib/jquery-qqface/arclist/2.gif",
+				"js/components/article/commentbox.js",
+				"js/lib/crypto-js/hmac-sha512.js",
+				"js/lib/jquery-qqface/arclist/6.gif",
+				"js/components/article/css/share.less",
+				"js/lib/jquery-qqface/arclist/10.gif",
+				"js/lib/jquery-qqface/arclist/23.gif",
+				"js/lib/jquery-qqface/arclist/70.gif",
+				"js/lib/crypto-js/hmac-sha256.js",
+				"js/lib/jquery-qqface/arclist/44.gif",
+				"js/lib/jquery-qqface/arclist/65.gif",
+				"js/containers/register/img/return.png",
+				"js/lib/jquery-qqface/arclist/47.gif",
+				"js/lib/jquery-qqface/arclist/71.gif",
+				"js/components/article/share.js",
+				"js/lib/jquery-qqface/arclist/13.gif",
+				"js/components/reglog/css/thirdlogin.less",
+				"js/lib/jquery-qqface/arclist/5.gif",
+				"js/lib/jquery-qqface/arclist/52.gif",
+				"js/lib/jquery-qqface/arclist/20.gif",
+				"js/lib/mui/mui.poppicker.css",
+				"js/lib/jquery-browser.js",
+				"js/lib/mui/mui.imageViewer.js",
+				"js/lib/jquery-qqface/arclist/49.gif",
+				"js/lib/jquery-qqface/arclist/40.gif",
+				"js/lib/jquery-qqface/arclist/25.gif",
+				"js/lib/crypto-js/hmac-sha384.js",
+				"js/components/discuz/img/addpost.jpg",
+				"js/lib/jquery-qqface/arclist/69.gif",
+				"js/containers/chat/detail.js",
+				"js/lib/crypto-js/hmac-md5.js",
+				"js/lib/jquery-qqface/arclist/57.gif",
+				"js/containers/register/img/putphoneno.png",
+				"js/lib/jquery-qqface/arclist/31.gif",
+				"js/containers/img/reglog.jpg",
+				"js/lib/wangeditor/wangEditor.min.css",
+				"js/lib/jquery-qqface/arclist/30.gif",
+				"js/lib/jquery-qqface/arclist/36.gif",
+				"js/lib/jquery-qqface/arclist/33.gif",
+				"js/lib/jquery-qqface/arclist/54.gif",
+				"js/lib/jquery-qqface/arclist/59.gif",
+				"js/containers/company/css/company.less",
+				"js/containers/article/css/article.css",
+				"js/containers/css/common.css",
+				"js/lib/jquery-qqface/arclist/21.gif",
+				"js/lib/jquery-qqface/arclist/37.gif",
+				"js/lib/crypto-js/enc-latin1.js",
+				"js/lib/jquery-qqface/arclist/63.gif",
+				"js/containers/register/css/register.less",
+				"js/lib/jquery-qqface/arclist/61.gif",
+				"js/lib/crypto-js/enc-hex.js",
+				"js/lib/socket.io.js",
+				"js/lib/jquery-qqface/arclist/38.gif",
+				"js/lib/fonts/iconfont.ttf",
+				"js/containers/css/main.less",
+				"js/lib/jquery-qqface/arclist/3.gif",
+				"js/lib/mui/mui.picker.min.css",
+				"js/containers/article/css/post.less",
+				"js/lib/jquery-qqface/arclist/27.gif",
+				"js/lib/jquery-qqface/arclist/35.gif",
+				"js/lib/jquery-qqface/arclist/16.gif",
+				"js/lib/jquery-qqface/arclist/41.gif",
+				"js/lib/fonts/iconfont.woff",
+				"js/lib/jquery-qqface/arclist/28.gif",
+				"js/lib/crypto-js/hmac-sha1.js",
+				"js/lib/mui.css",
+				"js/actions/socket.js",
+				"js/lib/jquery-qqface/arclist/17.gif",
+				"js/lib/jquery-qqface/arclist/14.gif",
+				"js/components/discuz/css/postbars.less",
+				"js/lib/jquery-qqface/arclist/56.gif",
+				"js/containers/discuz/css/discuz.less",
+				"js/lib/jquery-qqface/arclist/29.gif",
+				"js/components/company/css/cmpfooter.less",
+				"js/lib/jquery-qqface/arclist/48.gif",
+				"js/components/footer.js",
+				"js/lib/jquery-qqface/arclist/26.gif",
+				"js/lib/jquery-qqface/arclist/74.gif",
+				"js/lib/jquery-qqface/arclist/58.gif",
+				"js/containers/chat/css/chat.less",
+				"js/lib/jquery-qqface/arclist/55.gif",
+				"js/lib/jquery-qqface/arclist/32.gif",
+				"js/lib/socket.io.min.js",
+				"js/components/article/css/commentbox.less",
+				"js/components/article/css/share.css",
+				"js/lib/jquery-qqface/arclist/12.gif",
+				"js/lib/jquery-qqface/arclist/53.gif",
+				"js/lib/jquery-qqface/arclist/9.gif",
+				"js/lib/jquery-qqface/arclist/19.gif",
+				"js/lib/jquery-qqface/js/jquery.qqFace.js",
+				"js/lib/jquery-qqface/arclist/4.gif",
+				"js/containers/chat/css/chat.css",
+				"js/lib/jquery-qqface/arclist/39.gif",
+				"js/lib/crypto-js/crypto-js.js",
+				"js/lib/crypto-js/pad-pkcs7.js",
+				"js/containers/register/img/login.jpg",
+				"js/lib/fonts/iconfont.svg",
+				"js/lib/crypto-js/format-openssl.js",
+				"js/lib/jquery-qqface/arclist/73.gif",
+				"js/containers/entry.js",
+				"js/lib/mui/mui.zoom.js",
+				"js/lib/jquery-qqface/arclist/42.gif",
+				"js/components/company/css/cmpheader.less",
+				"js/lib/jquery-qqface/arclist/43.gif",
+				"js/containers/article/article.js",
+				"js/lib/crypto-js/hmac-sha224.js",
+				"js/lib/jquery-qqface/arclist/22.gif",
+				"js/lib/jquery-qqface/arclist/18.gif",
+				"js/lib/jquery-qqface/arclist/60.gif",
+				"js/containers/article/img/bg.png",
+				"js/lib/jquery-qqface/arclist/15.gif",
+				"js/lib/jquery-qqface/arclist/11.gif"
+			]
+		}
+	},
+	"unpackage": [
+	  "js/.module-cache",
+	  "build.bat",
+	  "js/components/article/css/commentbox.less",
+	  "js/components/article/css/share.less",
+	  "js/components/company/css/cmpfooter.less",
+	  "js/components/company/css/cmpheader.less",
+	  "js/components/discuz/css/postbars.less",
+	  "js/components/reglog/css/thirdlogin.less"
+	]
+}

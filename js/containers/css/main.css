@@ -1,0 +1,28 @@
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-image: url(../img/reglog.jpg);
+  background-position: 0 0;
+  background-size: 100%;
+}
+.main .btn {
+  width: 82%;
+  height: 2.3em;
+  color: #F5FBF6;
+  border-radius: 1.9em;
+  font-size: 1.2em;
+  border-color: transparent;
+}
+.main .btnlogin {
+  background-color: #3061FC;
+  bottom: 23%;
+}
+.main .btnregister {
+  background-color: rgba(61, 61, 61, 0.7);
+  bottom: 6%;
+}

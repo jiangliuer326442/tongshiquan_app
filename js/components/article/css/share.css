@@ -1,0 +1,82 @@
+.share {
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.share .share_txt {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+.share .share_txt.show {
+  animation: sharetobig .5s;
+  animation-fill-mode: forwards;
+}
+@keyframes sharetobig {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.share .share_txt.hide {
+  animation: sharetosmall .5s;
+  animation-fill-mode: forwards;
+}
+@keyframes sharetosmall {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.share .share_txt .icon_text {
+  display: flex;
+  justify-content: space-around;
+  height: 7em;
+  padding-top: 2em;
+}
+.share .share_txt .icon_text .icon_box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.share .share_txt .icon_text .icon_box .icon {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+.share .share_txt .icon_text .icon_box span {
+  color: #444;
+}
+.share .share_txt .icon_text .icon_box .icon--pengyouquan {
+  color: #3CB034;
+}
+.share .share_txt .icon_text .icon_box .icon--dengluweixin {
+  color: #3CB034;
+}
+.share .share_txt .icon_text .icon_box .icon--hicon1 {
+  color: #4B92D7;
+}
+.share .share_txt .icon_text .icon_box .icon--hicon2 {
+  color: #E2373A;
+}
+.share .share_txt .icon_text .icon_box .icon--xingzhuang4 {
+  color: #FFB509;
+}
+.share .share_txt .cancer {
+  text-align: center;
+  color: #888888;
+  font-size: 1.2em;
+  line-height: 2.2em;
+  border-top: 1px dashed #C8C8C8;
+}

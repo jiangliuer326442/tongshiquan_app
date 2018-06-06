@@ -1,0 +1,40 @@
+.thirdlogin {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+}
+.thirdlogin h5 {
+  color: #C8C8C8;
+  font-size: .8em;
+  letter-spacing: .1em;
+}
+.thirdlogin h5:before {
+  content: "----------------------";
+}
+.thirdlogin h5:after {
+  content: "----------------------";
+}
+.thirdlogin .loginicon {
+  display: flex;
+  margin-top: 6%;
+}
+.thirdlogin .loginicon .mui-icon {
+  font-size: 1.4em;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.thirdlogin .loginicon .mui-icon.mui-icon-weixin {
+  background-color: #00C833;
+  margin-right: 1em;
+}
+.thirdlogin .loginicon .mui-icon.mui-icon-qq {
+  background-color: #47B0FC;
+}

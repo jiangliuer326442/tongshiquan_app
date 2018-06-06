@@ -1,0 +1,182 @@
+.mui-poppicker li i {
+  margin-right: .3em;
+}
+.club_create {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.club_create .event_4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 0 1em;
+}
+.club_create .event_4 .desc {
+  margin-top: 20px;
+}
+.club_create .event_4 input {
+  margin: .5em 0;
+}
+.club_create .event_4 .qaarea {
+  margin-top: .5em;
+}
+.club_create .event_4 .qaarea .question {
+  line-height: 25px;
+}
+.club_create .event_4 .qaarea .answer {
+  font-size: 1em;
+  width: 100%;
+}
+.club_create .event_4 .qaarea .answer img {
+  width: 100%;
+  margin-top: .5em;
+}
+.club_create .header {
+  margin-top: 58px;
+  height: 78px;
+  display: flex;
+  padding: 0 10px;
+}
+.club_create .header .avatar {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 5px;
+}
+.club_create .header .avatar img {
+  width: 100%;
+  height: 100%;
+}
+.club_create .header .body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.club_create .header .body .nick {
+  font-family: "KAITI";
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  height: 1.2em;
+}
+.club_create .header .body .visible {
+  border: 1px solid #C8C8C8;
+  padding: 0 .5em;
+  height: 1.8em;
+  line-height: 1.8em;
+}
+.club_create .header .body .visible .clubfriends {
+  margin-right: .2em;
+  font-size: 1.1em;
+}
+.club_create .header .body .visible .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.club_create .tbody {
+  padding: .5em 10px;
+  flex: 1;
+}
+.club_create .tbody p {
+  color: #C8C8C8;
+  font-size: 1.1em;
+  min-height: 4.5em;
+  max-height: 7em;
+  overflow-y: scroll;
+}
+.club_create .tbody p.focus {
+  color: #000;
+}
+.club_create .tbody .link_box {
+  background-color: #efefef;
+  padding: 2px .8em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.club_create .tbody .link_box h4 {
+  font-weight: normal;
+  font-size: .9em;
+}
+.club_create .tbody .pics {
+  display: flex;
+  flex-wrap: wrap;
+}
+.club_create .tbody .pics img {
+  width: 22%;
+  height: 4.5em;
+  margin-right: .5em;
+  margin-bottom: .5em;
+}
+.club_create .tbody .pics img.unupload {
+  opacity: 0.5;
+}
+.club_create .tbody .pics .image-up {
+  height: 4.5em;
+  width: 22%;
+  border-radius: 10px;
+  line-height: 65px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  display: inline-block;
+  text-align: center;
+}
+.club_create .tbody .pics .image-up:after {
+  font-family: "微软雅黑";
+  content: '+';
+  font-size: 4.5em;
+}
+.club_create .tbody textarea {
+  display: none;
+}
+.club_create .footer {
+  position: fixed;
+  height: 44px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  display: flex;
+  bottom: 0px;
+  align-items: center;
+}
+.club_create .footer.emotion {
+  bottom: 12em;
+}
+.club_create .footer .mui-icon {
+  width: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  color: gray;
+}
+.club_create .footer #facebox {
+  height: 12em;
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.club_create .footer #facebox::-webkit-scrollbar {
+  display: none;
+}
+.club_create .footer #facebox table {
+  width: 100%;
+}
+.club_create .footer #facebox table tbody {
+  display: flex;
+  flex-direction: column;
+}
+.club_create .footer #facebox table tbody tr {
+  display: flex;
+}
+.club_create .footer #facebox table tbody tr td {
+  flex: 1;
+}
+.club_create .footer #facebox table tbody tr td img {
+  width: 90%;
+}

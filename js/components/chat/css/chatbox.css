@@ -1,0 +1,107 @@
+.chatbox {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eee;
+  margin-top: -0.5em;
+  padding-top: .5em;
+}
+.chatbox .mui-scroll dl {
+  background-color: transparent;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  min-height: 100vh;
+}
+.chatbox .mui-scroll dl dt {
+  color: #b2b2b2;
+  font-size: .8em;
+  text-align: center;
+}
+.chatbox .mui-scroll dl .msg-item {
+  -webkit-margin-start: 0;
+  padding: 8px;
+  clear: both;
+}
+.chatbox .mui-scroll dl .msg-item.mui-active {
+  background-color: transparent;
+}
+.chatbox .mui-scroll dl .msg-item:after {
+  background-color: transparent;
+}
+.chatbox .mui-scroll dl .msg-item .mui-item-clear {
+  clear: both;
+}
+.chatbox .mui-scroll dl .msg-item .msg-user {
+  width: 38px;
+  height: 38px;
+  border: solid 1px #d3d3d3;
+  display: inline-block;
+  background: #fff;
+  border-radius: 3px;
+  vertical-align: top;
+  text-align: center;
+  float: left;
+  padding: 3px;
+  color: #ddd;
+}
+.chatbox .mui-scroll dl .msg-item .msg-user-img {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 3px;
+  vertical-align: top;
+  text-align: center;
+  float: left;
+  color: #ddd;
+}
+.chatbox .mui-scroll dl .msg-item .msg-content {
+  display: inline-block;
+  border-radius: 5px;
+  border: solid 1px #d3d3d3;
+  background-color: #FFFFFF;
+  color: #333;
+  padding: 8px;
+  vertical-align: top;
+  font-size: 15px;
+  position: relative;
+  margin: 0px 8px;
+  max-width: 75%;
+  min-width: 35px;
+  float: left;
+}
+.chatbox .mui-scroll dl .msg-item .msg-content .msg-content-inner {
+  overflow-x: hidden;
+}
+.chatbox .mui-scroll dl .msg-item .msg-content .msg-content-inner img {
+  max-width: 100px;
+}
+.chatbox .mui-scroll dl .msg-item .msg-content .msg-content-arrow {
+  position: absolute;
+  border: solid 1px #d3d3d3;
+  border-right: none;
+  border-top: none;
+  background-color: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  left: -5px;
+  top: 12px;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.chatbox .mui-scroll dl .msg-item.msg-item-self .msg-user {
+  float: right;
+}
+.chatbox .mui-scroll dl .msg-item.msg-item-self .msg-content {
+  float: right;
+  background-color: #4CD964;
+  color: #fff;
+  border-color: #2AC845;
+}
+.chatbox .mui-scroll dl .msg-item.msg-item-self .msg-content .msg-content-arrow {
+  left: auto;
+  right: -5px;
+  background-color: #4CD964;
+  color: #fff;
+  border-color: #2AC845;
+  -webkit-transform: rotateZ(225deg);
+  transform: rotateZ(225deg);
+}

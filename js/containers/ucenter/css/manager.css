@@ -1,0 +1,16 @@
+.manager .mui-table-view li a {
+  display: flex;
+  align-items: center;
+}
+.manager .mui-table-view li a.mui-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+.manager .mui-table-view li a::before,
+.manager .mui-table-view li a i {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #C8C8C8;
+  display: inline-block;
+  width: 1.6em;
+}

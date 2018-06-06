@@ -1,0 +1,21 @@
+.settings .mui-scroll-wrapper .mui-table-view {
+  margin-top: 20px;
+}
+.settings .mui-scroll-wrapper .mui-table-view .mui-table-view-cell {
+  position: relative;
+  overflow: hidden;
+  padding: 11px 15px;
+}
+.settings .mui-scroll-wrapper .mui-table-view .mui-table-view-cell a:not(.mui-btn) {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: -11px -15px;
+  padding: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
+}
+.settings .mui-scroll-wrapper .mui-table-view .mui-table-view-cell span.mui-pull-right {
+  color: #999;
+}

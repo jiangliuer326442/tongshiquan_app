@@ -1,0 +1,119 @@
+.company {
+  background-color: #EBEBEB;
+}
+.company .farticle {
+  width: 100%;
+  margin-top: 50px;
+}
+.company .farticle .article_without_thumb,
+.company .farticle .article_with_thumb {
+  background-color: #fff;
+  padding: 0 .5em;
+  margin-top: .7em;
+  display: flex;
+}
+.company .farticle .article_without_thumb .title,
+.company .farticle .article_with_thumb .title {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-family: "KAITI";
+  font-weight: bold;
+  padding-top: .5em;
+  color: #222222;
+}
+.company .farticle .article_without_thumb {
+  flex-direction: column;
+  padding-right: 5%;
+}
+.company .farticle .article_without_thumb .desc {
+  font-size: 1em;
+  color: #484848;
+  margin-top: .3em;
+}
+.company .farticle .article_with_thumb {
+  justify-content: space-around;
+  height: 5em;
+}
+.company .farticle .article_with_thumb .title {
+  width: 68.75%;
+}
+.company .farticle .article_with_thumb .thumb {
+  width: 25.25%;
+}
+.company .farticle .article_with_thumb .thumb img {
+  height: 5em;
+}
+.company .othernotice {
+  margin-bottom: 51px;
+}
+.company .othernotice .tab_box {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: .5em 0;
+}
+.company .othernotice ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.company .othernotice ul li {
+  flex: 1;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  color: #020012;
+}
+.company .othernotice ul li.current {
+  border-bottom: 1px solid #f74253;
+  color: #f74253;
+}
+.company .othernotice .articlelist {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.company .othernotice .articlelist .article {
+  background-color: #fff;
+  display: flex;
+  margin-bottom: .7em;
+  align-items: center;
+  padding: 0 .5em;
+  width: 100%;
+}
+.company .othernotice .articlelist .article .thumb {
+  flex: 17;
+  margin-right: .3em;
+}
+.company .othernotice .articlelist .article .thumb img {
+  max-width: 100%;
+  max-height: 148px;
+}
+.company .othernotice .articlelist .article .texts {
+  display: flex;
+  flex-flow: column;
+  flex: 33;
+}
+.company .othernotice .articlelist .article .texts h3 {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.company .othernotice .articlelist .article .texts h3 a {
+  color: #313233;
+  line-height: 1.3em;
+}
+.company .othernotice .articlelist .article .texts article {
+  color: #9f9f9f;
+  font-size: .9em;
+  margin-top: 7px;
+}

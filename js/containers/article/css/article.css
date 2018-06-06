@@ -1,0 +1,37 @@
+.article {
+  font-family: "KAITI";
+  width: 100%;
+  padding: 0 5%;
+  background-color: #fff;
+  padding-bottom: 2em;
+}
+.article h2 {
+  width: 76%;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 52px auto 20px auto;
+  font-size: 1.2em;
+}
+.article .content p {
+  color: #000;
+  overflow: hidden;
+  text-indent: 1em;
+  margin-left: 0px !important;
+  font-size: .9em;
+  line-height: 1.4em;
+  word-wrap: break-word;
+}
+.article .content p img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.article .articlelist {
+  margin-top: 1em;
+}
+.article .articlelist ul li {
+  line-height: 1.8em;
+}
+.article .articlelist ul li a {
+  color: #666;
+}

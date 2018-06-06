@@ -1,0 +1,46 @@
+@import "../../css/common";
+
+.discuz{
+    display: flex; flex-direction: column;  background-color: #EBEBEB;
+    .postbarbox{
+        display: flex; align-items: center; background-color: #fff; padding: .5em; margin-top: 60px; margin-bottom: .5em;
+        .logo{
+            width: 25%; margin-right: .8em;
+            img{
+                width: 100%; border-radius: 5px;
+            }
+        }
+        .mainbox{
+            flex: 1; display: flex; flex-direction: column;
+            .desc{
+                -webkit-margin-before: 0em;
+                -webkit-margin-after: 0em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                font-weight: 400; color: @black; font-family: "KAITI"; font-size: 1.1em; line-height: 1.2em;
+                margin-bottom: .2em;
+            }
+            .author{
+                color: #333; font-size: .9em;
+            }
+        }
+    }
+    .posts{
+        .post{
+            .mui-card-content{
+                font-size: 120%;
+                h3{
+                    color: @black; font-size: 1.2em; font-family: "KAITI";
+                }
+                p{
+                    color: #454545; font-family: "KAITI"; font-size: 1em;
+                }  
+            }
+            .mui-card-footer{
+                span{
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+header.mui-bar {
+  background-color: #3C394B !important;
+}
+header.mui-bar .mui-title {
+  color: #F8F8F9;
+  letter-spacing: 1px;
+}
+header.mui-bar a {
+  color: #F8F8F9;
+}
+header #topPopover {
+  position: fixed;
+  background: #3C394B;
+  width: 8em;
+  top: 16px;
+  right: 6px;
+}
+header #topPopover .mui-popover-arrow {
+  left: auto;
+  right: 6px;
+}
+header #topPopover .mui-popover-arrow::after {
+  background: #3C394B;
+}
+header #topPopover .mui-scroll .mui-table-view {
+  background: #3C394B;
+}
+header #topPopover .mui-scroll .mui-table-view::before {
+  background-color: #3C394B !important;
+}
+header #topPopover .mui-scroll .mui-table-view::after {
+  background-color: #3C394B !important;
+}
+header #topPopover .mui-scroll .mui-table-view .mui-table-view-cell {
+  text-align: center;
+  padding: 9px 10px;
+  -webkit-tap-highlight-color: #3C394B;
+}
+header #topPopover .mui-scroll .mui-table-view .mui-table-view-cell::after {
+  background-color: #3C394B !important;
+}
+header #topPopover .mui-scroll .mui-table-view .mui-table-view-cell a {
+  color: #F8F8F9;
+  background-color: #3C394B;
+  text-align: center;
+  font-size: 1.1em;
+}
+header .right-box {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  right: .5em;
+  top: 58px;
+  height: 0px;
+  overflow: hidden;
+}
+header .right-box.show {
+  border: 1px solid #C8C8C8;
+  animation: asidetobig .5s;
+  animation-fill-mode: forwards;
+}
+@keyframes asidetobig {
+  from {
+    height: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 150px;
+    opacity: 1;
+  }
+}
+header .right-box.hide {
+  border: 1px solid #C8C8C8;
+  animation: asidetosmall .5s;
+  animation-fill-mode: forwards;
+}
+@keyframes asidetosmall {
+  from {
+    height: 150px;
+    opacity: 1;
+  }
+  to {
+    height: 0px;
+    opacity: 0;
+  }
+}

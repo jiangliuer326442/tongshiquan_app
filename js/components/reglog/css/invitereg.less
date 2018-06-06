@@ -1,0 +1,59 @@
+@import "../../../containers/css/common";
+
+.invite_reg{
+    width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0,0,0,.3) ; visibility: hidden; z-index: 999; display: flex; justify-content: center; align-items: center;
+    .box{
+        width: 20%; 
+        padding: 1em 1em; 
+        margin: 1em; 
+        background-color: #fff; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        &.hide{
+            animation:bartosmall .3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bartosmall{
+            from {width: 100%;}
+            to {width: 20%;}
+        }
+        &.show{
+            animation:bartobig .3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bartobig{
+            from {width: 20%;}
+            to {width: 100%;}
+        }
+        .qrcode{
+            width: 270px;
+        }
+        h4{
+            line-height: 2;
+        }
+        .share-box{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            .icon_box{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .icon{
+                    font-size: 3em; margin-bottom: .5em; padding-top: .3em;
+                }
+                span{
+                    color: #444;
+                }
+                .icon--dengluweixin{
+                    color: #3CB034;
+                }
+                .icon--hicon1{
+                    color: #4B92D7;
+                }
+            }
+        }
+    }
+}

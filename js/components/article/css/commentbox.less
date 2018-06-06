@@ -1,0 +1,65 @@
+@import "../../../containers/css/common";
+
+.discuss_footer{
+    background-color: #fff; height: auto; display: block; padding: 0 .5em 0 1em; border-top: 1px solid #D3D3D3;
+    &.emotion{ 
+        height: auto !important;
+    }
+    #comment_content {
+        background: #fff;
+        border: solid 1px #ddd;
+        padding: 10px !important;
+        font-size: 16px !important;
+        font-family: verdana !important;
+        line-height: 18px !important;
+        overflow: visible;
+        position: absolute;
+        left: -2000px;
+        top: 0px;
+        word-break: break-all;
+        word-wrap: break-word;
+        display: block; 
+        whitewhite-space:pre-wrap; /* css-3 */    
+        whitewhite-space:-moz-pre-wrap; /* Mozilla, since 1999 */    
+        whitewhite-space:-pre-wrap; /* Opera 4-6 */    
+        whitewhite-space:-o-pre-wrap; /* Opera 7 */
+        white-space: pre-wrap; /* Firefox */ 
+    }
+    #facebox{
+        height: 12em; overflow-y: scroll;
+        &::-webkit-scrollbar {display:none}
+        table{
+            width: 100%;
+            tbody{
+                display: flex; flex-direction: column;
+                tr{
+                    display: flex;
+                    td{
+                        flex: 1;
+                        img{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .comment_area{
+        display: flex; align-items: center; height: 50px;
+        .content_box{
+            flex: 1; background-color: #F4F4F6; height: 66%; border: 1px solid #CFCFCF; display: flex; align-items: center;
+            textarea{
+                flex: 1; padding: 0 .5em; height: 100%; background-color: #F4F4F6; line-height: 150%; margin: 0; border-width: 0px; overflow-y: hidden;
+            }
+        }
+        button{
+            border-color: transparent; background-color: transparent; top: 0px;
+            &.gray{
+                color: @gray;
+            }
+        }
+        .icon--face{
+            font-size: 1.5em; color: #808080; margin: 0; margin-left: .5em;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import "../../css/common";
+
+.mui-poppicker{
+    li{
+        i{
+            margin-right: .3em;
+        }
+    }
+}
+.club_create{
+    background-color: #fff; display: flex; flex-direction: column; height: 100vh;
+    .event_4{
+        display: flex; flex-direction: column; margin-top: 50px; padding: 0 1em;
+        .desc{ 
+            margin-top: 20px;
+        }
+        input{
+            margin: .5em 0;
+        }
+        .qaarea{
+            margin-top: .5em;
+            .question{
+                line-height: 25px;
+            }
+            .answer{
+                font-size: 1em; width: 100%;
+                img{
+                    width:100%; margin-top: .5em;
+                }
+            }
+        }
+    }
+    .header{
+        margin-top: 58px; height: 78px; display: flex; padding: 0 10px;
+        .avatar{
+            width: 3.5em; height: 3.5em; border-radius: 5px;
+            img{
+                width: 100%; height: 100%;
+            }
+        }
+        .body{
+            display: flex; flex-direction: column; margin-left: 1em;
+            .nick{
+                font-family: "KAITI"; font-weight: bold; font-size: 1.5em; line-height: 1.2em; height: 1.2em;
+            }
+            .visible{
+                border: 1px solid @gray; padding: 0 .5em; height: 1.8em; line-height: 1.8em;
+                .clubfriends{
+                    margin-right: .2em; font-size: 1.1em;
+                }
+                .caret{
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    margin-left: 4px;
+                    vertical-align: middle;
+                    border-top: 4px dashed;
+                    border-top: 4px solid\9;
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                }
+            }
+        }
+    }
+    .tbody{
+        padding: .5em 10px; flex: 1;
+        p{
+            color: @gray; font-size: 1.1em; min-height: 4.5em; max-height: 7em; overflow-y: scroll;
+            &.focus{
+                color: #000;
+            }
+        }
+        .link_box{
+            background-color: #efefef;
+            padding: 2px .8em;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            h4{
+                font-weight: normal;
+                font-size: .9em;
+            }
+        }
+        .pics{
+            display: flex; flex-wrap: wrap;
+            img{
+                width: 22%; height: 4.5em; margin-right: .5em; margin-bottom: .5em;
+                &.unupload{
+                    opacity: 0.5;
+                }
+            }
+            .image-up{
+                height: 4.5em;
+                width: 22%;
+                border-radius: 10px;
+                line-height: 65px;
+                border: 1px solid #ccc;
+                color: #ccc;
+                display: inline-block;
+                text-align: center;
+                &:after{
+                    font-family: "微软雅黑";
+                    content: '+';
+                    font-size: 4.5em;
+                }
+            }
+        }
+        textarea{
+            display: none;
+        }
+    }
+    .footer{
+        position: fixed; height: 44px; background-color: #f9f9f9; border-top: 1px solid #ccc; display: flex; bottom: 0px; align-items: center;
+        &.emotion{
+            bottom: 12em;
+        }
+        .mui-icon{
+            width: 2em; font-size: 1.5em; text-align: center; color: gray;
+        }
+        #facebox{
+            height: 12em; overflow-y: scroll; position: fixed; bottom: 0px; width: 100%;
+            &::-webkit-scrollbar {display:none}
+            table{
+                width: 100%;
+                tbody{
+                    display: flex; flex-direction: column;
+                    tr{
+                        display: flex;
+                        td{
+                            flex: 1;
+                            img{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

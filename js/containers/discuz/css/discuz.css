@@ -1,0 +1,58 @@
+.discuz {
+  display: flex;
+  flex-direction: column;
+  background-color: #EBEBEB;
+}
+.discuz .postbarbox {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: .5em;
+  margin-top: 60px;
+  margin-bottom: .5em;
+}
+.discuz .postbarbox .logo {
+  width: 25%;
+  margin-right: .8em;
+}
+.discuz .postbarbox .logo img {
+  width: 100%;
+  border-radius: 5px;
+}
+.discuz .postbarbox .mainbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.discuz .postbarbox .mainbox .desc {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: 400;
+  color: #313233;
+  font-family: "KAITI";
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin-bottom: .2em;
+}
+.discuz .postbarbox .mainbox .author {
+  color: #333;
+  font-size: .9em;
+}
+.discuz .posts .post .mui-card-content {
+  font-size: 120%;
+}
+.discuz .posts .post .mui-card-content h3 {
+  color: #313233;
+  font-size: 1.2em;
+  font-family: "KAITI";
+}
+.discuz .posts .post .mui-card-content p {
+  color: #454545;
+  font-family: "KAITI";
+  font-size: 1em;
+}
+.discuz .posts .post .mui-card-footer span {
+  font-size: .8em;
+}

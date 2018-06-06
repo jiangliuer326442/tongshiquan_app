@@ -1,0 +1,39 @@
+@import "../../../containers/css/common";
+
+.discuz_postbars{
+    width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0,0,0,.3) ; visibility: hidden; z-index: 999; display: flex; justify-content: center; align-items: center;
+    .bars{
+        width: 20%; padding: 1em 1em; margin: 1em; background-color: #2F2C2D; display: flex; flex-direction: row; flex-wrap: wrap;
+        &.hide{
+            animation:bartosmall .3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bartosmall{
+            from {width: 100%;}
+            to {width: 20%;}
+        }
+        &.show{
+            animation:bartobig .3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bartobig{
+            from {width: 20%;}
+            to {width: 100%;}
+        }
+        .bar{
+            width: 25%; margin: 4.1%; display: flex; flex-direction: column; align-items: center;
+            .banner{
+                position:relative; width:100%; height:0; padding-top:100%;
+                &.addpost{
+                    background-image: url(../img/addpost.jpg); background-size: 100%;
+                }
+                img{
+                    border-radius: 5px; position:absolute; top:0; left:0; width:100%; height:100%;
+                }
+            }
+            .context{
+                color: white; height: 2em; line-height: 2.5em; font-size: 1em; overflow: hidden;
+            }
+        }
+    }
+}

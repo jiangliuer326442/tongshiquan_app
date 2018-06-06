@@ -1,0 +1,32 @@
+.createarticle .mui-content {
+  padding: .5em;
+}
+.createarticle .mui-content p {
+  padding: 10px 15px 0;
+}
+.createarticle .mui-content input,
+.createarticle .mui-content textarea {
+  border: none;
+}
+.createarticle .mui-content .mui-input-row.desc {
+  height: 85px;
+  padding: 10px;
+  overflow: hidden;
+}
+.createarticle .mui-content .editarea .toolbar {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  top: 60px;
+  z-index: 2;
+  width: 100%;
+}
+.createarticle .mui-content .editarea .editor {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 250px;
+}
+.createarticle .mui-content .editarea .editor p {
+  color: #444;
+  font-size: 110%;
+  text-indent: 2em;
+}

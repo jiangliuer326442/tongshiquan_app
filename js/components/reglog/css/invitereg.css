@@ -1,0 +1,76 @@
+.invite_reg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invite_reg .box {
+  width: 20%;
+  padding: 1em 1em;
+  margin: 1em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invite_reg .box.hide {
+  animation: bartosmall .3s;
+  animation-fill-mode: forwards;
+}
+@keyframes bartosmall {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 20%;
+  }
+}
+.invite_reg .box.show {
+  animation: bartobig .3s;
+  animation-fill-mode: forwards;
+}
+@keyframes bartobig {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.invite_reg .box .qrcode {
+  width: 270px;
+}
+.invite_reg .box h4 {
+  line-height: 2;
+}
+.invite_reg .box .share-box {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.invite_reg .box .share-box .icon_box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.invite_reg .box .share-box .icon_box .icon {
+  font-size: 3em;
+  margin-bottom: .5em;
+  padding-top: .3em;
+}
+.invite_reg .box .share-box .icon_box span {
+  color: #444;
+}
+.invite_reg .box .share-box .icon_box .icon--dengluweixin {
+  color: #3CB034;
+}
+.invite_reg .box .share-box .icon_box .icon--hicon1 {
+  color: #4B92D7;
+}

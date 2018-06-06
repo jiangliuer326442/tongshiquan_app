@@ -1,0 +1,89 @@
+.userinfo .company .mui-bar {
+  background-color: transparent;
+  box-shadow: none;
+}
+.userinfo .company .mui-bar a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.userinfo .company .mui-bar .mui-icon-extra-heart-filled.on {
+  color: #FFAC38;
+}
+.userinfo .headerbox {
+  height: 30vh;
+  background-size: 100%;
+  filter: blur(10px);
+}
+.userinfo .headerbox-content {
+  height: 30vh;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  left: 0;
+  width: 100%;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo .headerbox-content .avatar {
+  margin-top: 3vh;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 100%;
+}
+.userinfo .headerbox-content .nick {
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: "楷体";
+  margin-top: 1.3vh;
+  margin-bottom: 1px;
+}
+.userinfo .headerbox-content .mail {
+  font-size: .6em;
+  font-weight: normal;
+  font-family: "楷体";
+  color: #fff;
+}
+.userinfo .headerbox-content .contact-box {
+  display: flex;
+  margin-top: 1.7vh;
+  width: 100%;
+}
+.userinfo .headerbox-content .contact-box span {
+  flex: 1;
+  margin: 0 1vh;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1em;
+  line-height: 1.8em;
+  border-radius: .9em;
+}
+.userinfo .headerbox-content .contact-box span .mui-icon {
+  font-size: 1em;
+}
+.userinfo .headerbox-content .contact-box span:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.userinfo .mui-content .mui-table-view {
+  margin-top: 1.5em;
+}
+.userinfo .mui-content .mui-table-view .mui-switch {
+  border-color: #999;
+  background-color: #999;
+}
+.userinfo .mui-content .mui-table-view .mui-switch.mui-active {
+  border-color: #4cd964;
+  background-color: #4cd964;
+}
+.userinfo .mui-content .mui-table-view .mui-switch.mui-active:before {
+  content: "";
+}
+.userinfo .mui-content .mui-table-view .mui-switch:before {
+  content: "";
+}
+.userinfo .mui-content .chat-btn {
+  margin: 1.5em auto;
+  padding: 10px 0;
+  width: 90%;
+}

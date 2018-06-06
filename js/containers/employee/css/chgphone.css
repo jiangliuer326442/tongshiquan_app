@@ -1,0 +1,16 @@
+.chgphone input[type=phone] {
+  height: 40px;
+}
+.chgphone input.codes {
+  width: 30%;
+  float: none;
+}
+.chgphone .chgphonecodes-triggler {
+  margin: 0 15px;
+  width: 24%;
+  padding: 10px 0;
+}
+.chgphone .gray {
+  border: #C8C8C8;
+  background-color: #C8C8C8;
+}

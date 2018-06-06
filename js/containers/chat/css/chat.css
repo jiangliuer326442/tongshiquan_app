@@ -1,0 +1,323 @@
+html,
+body {
+  background-color: #efeff4;
+}
+.mui-views,
+.mui-view,
+.mui-pages,
+.mui-page,
+.mui-page-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #efeff4;
+}
+.mui-pages {
+  top: 46px;
+  height: auto;
+}
+.mui-scroll-wrapper,
+.mui-scroll {
+  background-color: #efeff4;
+}
+.mui-page.mui-transitioning {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+}
+.mui-page-left {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.mui-ios .mui-page-left {
+  -webkit-transform: translate3d(-20%, 0, 0);
+  transform: translate3d(-20%, 0, 0);
+}
+.mui-navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 44px;
+  background-color: #f7f7f8;
+}
+.mui-navbar .mui-bar {
+  position: absolute;
+  text-align: center;
+}
+.mui-android .mui-navbar-inner.mui-navbar-left {
+  opacity: 0;
+}
+.mui-ios .mui-navbar-left .mui-left,
+.mui-ios .mui-navbar-left .mui-center,
+.mui-ios .mui-navbar-left .mui-right {
+  opacity: 0;
+}
+.mui-navbar .mui-btn-nav {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transition-duration: .0s;
+  transition-duration: .0s;
+}
+.mui-navbar .mui-bar .mui-title {
+  display: inline-block;
+  width: auto;
+}
+.mui-page-shadow {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 16px;
+  height: 100%;
+  z-index: -1;
+  content: '';
+}
+.mui-page-shadow {
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
+.mui-navbar-inner.mui-transitioning,
+.mui-navbar-inner .mui-transitioning {
+  -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+.mui-page {
+  display: none;
+}
+.mui-pages .mui-page {
+  display: block;
+}
+.mui-page .mui-table-view:last-child {
+  margin-bottom: 30px;
+}
+.mui-table-view span.mui-pull-right {
+  color: #999;
+}
+.mui-table-view-divider {
+  background-color: #efeff4;
+  font-size: 14px;
+}
+.mui-table-view-divider:before,
+.mui-table-view-divider:after {
+  height: 0;
+}
+.head {
+  height: 40px;
+}
+#head {
+  line-height: 40px;
+}
+.head-img {
+  width: 40px;
+  height: 40px;
+}
+#head-img1 {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.update {
+  font-style: normal;
+  color: #999999;
+  margin-right: -25px;
+  font-size: 15px;
+}
+.mui-fullscreen {
+  background-color: #000;
+}
+.mui-ios .mui-navbar .mui-bar .mui-title {
+  position: static;
+}
+.chat #topPopover {
+  width: 6em !important;
+  top: 0 !important;
+}
+.chat footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  border-top: solid 1px #bbb;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  padding: 0px 50px;
+  background-color: #fafafa;
+}
+.chat footer .footer-left {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+  padding: 12px 4px;
+}
+.chat footer .footer-right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0px;
+  bottom: 0px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+  padding: 12px 5px;
+  display: inline-block;
+}
+.chat footer .footer-center {
+  height: 100%;
+  padding: 5px 0px;
+}
+.chat footer .footer-center [class*=input] {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.chat footer .footer-center .input-text {
+  background: #fff;
+  border: solid 1px #ddd;
+  padding: 10px !important;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  font-family: verdana !important;
+  overflow: hidden;
+}
+.chat footer .footer-center .input-sound {
+  background-color: #eee;
+}
+.chat footer .mui-icon {
+  color: #000;
+}
+.chat footer .mui-icon:active {
+  color: #007AFF !important;
+}
+.chat footer .mui-icon-paperplane:before {
+  content: "发送";
+}
+.chat footer .mui-icon-paperplane {
+  /*-webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);*/
+  font-size: 16px;
+  word-break: keep-all;
+  line-height: 100%;
+  padding-top: 6px;
+  color: #0087fa;
+}
+.chat #msg-sound {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+.chat .rprogress {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 140px;
+  margin-left: -70px;
+  margin-top: -70px;
+  background-image: url(../images/arecord.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  display: none;
+  -webkit-transition: .15s;
+}
+.chat .rschedule {
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid rgba(0, 183, 229, 0.9);
+  opacity: .9;
+  border-left: 5px solid rgba(0, 0, 0, 0);
+  border-right: 5px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  box-shadow: 0 0 15px #2187e7;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -23px;
+  margin-top: -23px;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+.chat .r-sigh {
+  display: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #2187e7;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -23px;
+  margin-top: -23px;
+  text-align: center;
+  line-height: 46px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2187e7;
+}
+.chat .rprogress-sigh {
+  background-image: none !important;
+}
+.chat .rprogress-sigh .rschedule {
+  display: none !important;
+}
+.chat .rprogress-sigh .r-sigh {
+  display: block !important;
+}
+.chat .rsalert {
+  font-size: 12px;
+  color: #bbb;
+  text-align: center;
+  position: absolute;
+  border-radius: 5px;
+  width: 130px;
+  margin: 5px 5px;
+  padding: 5px;
+  left: 0px;
+  bottom: 0px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.chat #h {
+  background: #fff;
+  border: solid 1px #ddd;
+  padding: 10px !important;
+  font-size: 16px !important;
+  font-family: verdana !important;
+  line-height: 18px !important;
+  overflow: visible;
+  position: absolute;
+  left: -1000px;
+  right: 0px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.chat .cancel {
+  background-color: darkred;
+}
